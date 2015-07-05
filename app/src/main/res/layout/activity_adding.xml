@@ -56,7 +56,7 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:shrinkColumns="1"
-            android:stretchColumns="2,6,4">
+            android:stretchColumns="2,7,4">
 
             <TableRow
                 android:id="@+id/tableRow2"
@@ -66,16 +66,10 @@
 
 
                 <ImageButton
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150px"
                     android:id="@+id/imageButton"
-                    android:src="@drawable/buttonmenu"
-
-                    android:layout_marginTop="1pt"
-                    android:layout_marginBottom="1pt"
-                    android:layout_marginLeft="1pt"
-                    android:layout_column="1" />
+                    android:src="@drawable/buttonmenu" />
             </TableRow>
 
 
@@ -88,9 +82,3 @@
 
 
 </RelativeLayout>
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> origin/master
