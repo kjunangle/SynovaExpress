@@ -12,6 +12,7 @@ import android.widget.ImageButton;
 public class AddingActivity extends Activity {
 
     ImageButton scan_btn;
+    ImageButton menu_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,15 @@ public class AddingActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(AddingActivity.this,ScanInputActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        menu_btn = (ImageButton)findViewById(R.id.menuButton);
+        menu_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AddingActivity.this,InformationActivity.class);
                 startActivity(intent);
             }
         });
