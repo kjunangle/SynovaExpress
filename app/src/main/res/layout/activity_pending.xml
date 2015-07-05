@@ -1,7 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     >
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutHeader"
+        android:orientation="vertical"
+       >
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:shrinkColumns="1"
+            android:stretchColumns="8,4">
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffffff">
+                <ImageView
+                    android:layout_width="500px"
+                    android:layout_height="200px"
+                    android:id="@+id/imageView_Time"
+                    android:background="@drawable/headerleft" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView_User"
+                    android:background="@drawable/headright" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:id="@+id/layoutMenu"
+        android:layout_below="@+id/layoutHeader">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:shrinkColumns="1"
+            android:stretchColumns="2,10"
+            android:background="#0f6596">
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/menuButton"
+                    android:src="@drawable/buttonmenu"
+                    android:layout_marginTop="2pt"
+                    android:layout_marginLeft="2pt"/>
+                <TextView
+                    android:layout_width="800px"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pagename"
+                    android:textSize="14pt"
+                    android:gravity="center"
+                    android:textColor="#FFF"
+                    android:paddingTop="2pt"
+                    android:text="Pendding"/>
+
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

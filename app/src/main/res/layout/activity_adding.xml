@@ -59,38 +59,19 @@
                 <ImageButton
                     android:layout_width="100px"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageButton"
+                    android:id="@+id/menuButton"
                     android:src="@drawable/buttonmenu"
                     android:layout_marginTop="2pt"
                     android:layout_marginLeft="2pt"/>
                 <TextView
                     android:layout_width="800px"
-<<<<<<< HEAD
-                    android:src="@drawable/buttonmenu"/>
-                <TextView
-                    android:layout_width="800px"
-                    android:src="@drawable/buttonmenu"/>
-                <TextView
-                    android:layout_width="800px"
-                    android:layout_marginLeft="2pt"
-                    android:layout_column="0"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="All Tracking"
-                    android:id="@+id/pagrname"
-                    android:textSize="10pt"
-
-                    android:paddingTop="3pt"
-                    android:gravity="center"/>
-=======
                     android:layout_height="wrap_content"
                     android:id="@+id/pagrname"
->>>>>>> origin/master
-                    android:textSize="15pt"
+                    android:textSize="14pt"
                     android:gravity="center"
-                    android:textColor="#FFFFFFFF"
-                    android:paddingTop="4pt"/>
+                    android:textColor="#FFF"
+                    android:paddingTop="2pt"
+                    android:text="All Tracking"/>
                 <ImageButton
                     android:layout_width="150px"
                     android:layout_height="wrap_content"
@@ -99,7 +80,4 @@
             </TableRow>
         </TableLayout>
     </LinearLayout>
-
-
 </RelativeLayout>
-
