@@ -62,14 +62,12 @@
                     android:src="@drawable/buttonmenu"/>
                 <TextView
                     android:layout_width="800px"
-                    android:layout_marginLeft="2pt"
-                    android:layout_column="0"/>
-                <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:textSize="15pt"
                     android:gravity="center"
                     android:textColor="#FFFFFFFF"
-                    android:paddingTop="4pt"/>
+                    android:paddingTop="4pt"
+                    android:text="All Tracking"/>
                 <ImageButton
                     android:layout_width="150px"
                     android:layout_height="wrap_content"
@@ -78,7 +76,5 @@
             </TableRow>
         </TableLayout>
     </LinearLayout>
-
-
 </RelativeLayout>
 
