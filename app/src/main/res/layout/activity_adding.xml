@@ -52,7 +52,6 @@
             android:stretchColumns="2,7,3"
             android:background="#0f6596">
 
-
             <TableRow
                 android:id="@+id/tableRow2"
                 android:layout_width="wrap_content"
@@ -69,11 +68,13 @@
                     android:src="@drawable/buttonmenu"/>
                 <TextView
                     android:layout_width="800px"
+                    android:src="@drawable/buttonmenu"/>
+                <TextView
+                    android:layout_width="800px"
                     android:layout_marginLeft="2pt"
                     android:layout_column="0"/>
                 <TextView
                     android:layout_width="wrap_content"
-
                     android:layout_height="wrap_content"
                     android:text="All Tracking"
                     android:id="@+id/pagrname"
@@ -92,7 +93,6 @@
                     android:src="@drawable/scanbtn"/>
             </TableRow>
         </TableLayout>
-
     </LinearLayout>
 
 
