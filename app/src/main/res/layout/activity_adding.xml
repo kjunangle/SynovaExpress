@@ -49,15 +49,8 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:shrinkColumns="1"
-<<<<<<< Updated upstream
             android:stretchColumns="2,7,3"
             android:background="#0f6596">
-=======
-            android:stretchColumns="2,7,2"
-            android:background="#0f6596"
-            >
-
->>>>>>> Stashed changes
             <TableRow
                 android:id="@+id/tableRow2"
                 android:layout_width="wrap_content"
@@ -66,38 +59,17 @@
                     android:layout_width="100px"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageButton"
-<<<<<<< HEAD
                     android:src="@drawable/buttonmenu"/>
-=======
-                    android:src="@drawable/buttonmenu"
-                    android:layout_marginTop="2pt"
-<<<<<<< Updated upstream
-                    android:layout_marginLeft="2pt"/>
->>>>>>> origin/master
                 <TextView
                     android:layout_width="800px"
-=======
                     android:layout_marginLeft="2pt"
-                    android:layout_column="0"
-                    />
-
+                    android:layout_column="0"/>
                 <TextView
                     android:layout_width="wrap_content"
->>>>>>> Stashed changes
-                    android:layout_height="wrap_content"
-                    android:text="All Tracking"
-                    android:id="@+id/pagrname"
-<<<<<<< HEAD
                     android:textSize="15pt"
                     android:gravity="center"
                     android:textColor="#FFFFFFFF"
                     android:paddingTop="4pt"/>
-=======
-                    android:textSize="10pt"
-<<<<<<< Updated upstream
-                    android:paddingTop="3pt"
-                    android:gravity="center"/>
->>>>>>> origin/master
                 <ImageButton
                     android:layout_width="150px"
                     android:layout_height="wrap_content"
@@ -105,22 +77,6 @@
                     android:src="@drawable/scanbtn"/>
             </TableRow>
         </TableLayout>
-=======
-                    android:layout_column="1"
-                    android:gravity="center"
-                    android:paddingTop="3pt"/>
-
-
-
-            </TableRow>
-
-
-
-        </TableLayout>
-
-
-
->>>>>>> Stashed changes
     </LinearLayout>
 
 
