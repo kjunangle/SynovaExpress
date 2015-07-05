@@ -51,6 +51,7 @@
             android:shrinkColumns="1"
             android:stretchColumns="2,7,3"
             android:background="#0f6596">
+
             <TableRow
                 android:id="@+id/tableRow2"
                 android:layout_width="wrap_content"
@@ -59,10 +60,32 @@
                     android:layout_width="100px"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageButton"
+                    android:src="@drawable/buttonmenu"
+                    android:layout_marginTop="2pt"
+                    android:layout_marginLeft="2pt"/>
+                <TextView
+                    android:layout_width="800px"
                     android:src="@drawable/buttonmenu"/>
                 <TextView
                     android:layout_width="800px"
+                    android:src="@drawable/buttonmenu"/>
+                <TextView
+                    android:layout_width="800px"
+<<<<<<< HEAD
                     android:layout_height="wrap_content"
+=======
+                    android:layout_marginLeft="2pt"
+                    android:layout_column="0"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All Tracking"
+                    android:id="@+id/pagrname"
+                    android:textSize="10pt"
+
+                    android:paddingTop="3pt"
+                    android:gravity="center"/>
+>>>>>>> origin/master
                     android:textSize="15pt"
                     android:gravity="center"
                     android:textColor="#FFFFFFFF"
