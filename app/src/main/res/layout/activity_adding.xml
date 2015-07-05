@@ -51,25 +51,30 @@
 
         <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="120px"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:shrinkColumns="1"
-            android:stretchColumns="2,7,4">
+            android:stretchColumns="2,7,4"
+            android:background="#0f6596"
+            >
 
             <TableRow
                 android:id="@+id/tableRow2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#0f6596">
+                >
 
 
                 <ImageButton
-                    android:layout_width="match_parent"
-                    android:layout_height="150px"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
                     android:id="@+id/imageButton"
-                    android:src="@drawable/buttonmenu" />
+                    android:src="@drawable/buttonmenu"
+                    android:layout_marginTop="2pt"
+                    android:layout_marginLeft="2pt"
+                    android:layout_marginBottom="2pt"/>
             </TableRow>
 
 
@@ -82,7 +87,4 @@
 
 
 </RelativeLayout>
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
