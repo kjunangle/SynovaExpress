@@ -41,6 +41,56 @@
 
         </LinearLayout>
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:id="@+id/layoutMenu"
+        android:layout_below="@+id/layoutHeader"
+        >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:shrinkColumns="1"
+            android:stretchColumns="2,6,4">
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0f6596">
+
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/imageButton"
+                    android:src="@drawable/buttonmenu"
+
+                    android:layout_marginTop="1pt"
+                    android:layout_marginBottom="1pt"
+                    android:layout_marginLeft="1pt"
+                    android:layout_column="1" />
+            </TableRow>
+
+
+
+            </TableLayout>
+
+
+
+    </LinearLayout>
 
 
 </RelativeLayout>
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> origin/master
