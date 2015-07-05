@@ -74,8 +74,26 @@
                     android:src="@drawable/buttonmenu"
                     android:layout_marginTop="2pt"
                     android:layout_marginLeft="2pt"
-                    android:layout_marginBottom="2pt"/>
-            </TableRow>
+                    android:layout_column="1"
+                   />
+
+                <TextView
+                    android:layout_width="300px"
+                    android:layout_height="wrap_content"
+                    android:text="All Tracking"
+                    android:id="@+id/pagrname"
+                    android:textSize="10pt"
+                    android:layout_column="2"
+                    android:paddingTop="3pt"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scanButton"
+                android:src="@drawable/scanbtn"
+                android:layout_column="3"/>
+
+        </TableRow>
 
 
 
