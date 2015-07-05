@@ -9,7 +9,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/layoutHeader"
         android:orientation="vertical">
-
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -18,14 +17,11 @@
             android:layout_alignParentEnd="true"
             android:shrinkColumns="1"
             android:stretchColumns="8,4">
-
             <TableRow
                 android:id="@+id/tableRow1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#ffffffff">
-
-                <!-- open time-->
                 <ImageView
                     android:layout_width="500px"
                     android:layout_height="200px"
@@ -38,17 +34,15 @@
                     android:background="@drawable/headright" />
             </TableRow>
         </TableLayout>
+    </LinearLayout>
 
-        </LinearLayout>
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="150px"
         android:id="@+id/layoutMenu"
-        android:layout_below="@+id/layoutHeader"
-        >
-
+        android:layout_below="@+id/layoutHeader">
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="120px"
@@ -56,51 +50,34 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:shrinkColumns="1"
-            android:stretchColumns="2,7,4"
-            android:background="#0f6596"
-            >
-
+            android:stretchColumns="2,7,3"
+            android:background="#0f6596">
             <TableRow
                 android:id="@+id/tableRow2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                >
-
-
+                android:layout_height="wrap_content">
                 <ImageButton
                     android:layout_width="100px"
                     android:layout_height="100px"
                     android:id="@+id/imageButton"
                     android:src="@drawable/buttonmenu"
                     android:layout_marginTop="2pt"
-                    android:layout_marginLeft="2pt"
-                    android:layout_column="1"
-                   />
-
+                    android:layout_marginLeft="2pt"/>
                 <TextView
-                    android:layout_width="300px"
+                    android:layout_width="800px"
                     android:layout_height="wrap_content"
                     android:text="All Tracking"
                     android:id="@+id/pagrname"
                     android:textSize="10pt"
-                    android:layout_column="2"
-                    android:paddingTop="3pt"/>
-
-            <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/scanButton"
-                android:src="@drawable/scanbtn"
-                android:layout_column="3"/>
-
-        </TableRow>
-
-
-
-            </TableLayout>
-
-
-
+                    android:paddingTop="3pt"
+                    android:gravity="center"/>
+                <ImageButton
+                    android:layout_width="200px"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/scanButton"
+                    android:src="@drawable/scanbtn"/>
+            </TableRow>
+        </TableLayout>
     </LinearLayout>
 
 
