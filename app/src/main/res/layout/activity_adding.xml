@@ -57,21 +57,20 @@
                 android:layout_height="wrap_content">
                 <ImageButton
                     android:layout_width="100px"
-                    android:layout_height="100px"
+                    android:layout_height="wrap_content"
                     android:id="@+id/imageButton"
-                    android:src="@drawable/buttonmenu"
-                    android:layout_marginTop="2pt"
-                    android:layout_marginLeft="2pt"/>
+                    android:src="@drawable/buttonmenu"/>
                 <TextView
                     android:layout_width="800px"
                     android:layout_height="wrap_content"
                     android:text="All Tracking"
                     android:id="@+id/pagrname"
-                    android:textSize="10pt"
-                    android:paddingTop="3pt"
-                    android:gravity="center"/>
+                    android:textSize="15pt"
+                    android:gravity="center"
+                    android:textColor="#FFFFFFFF"
+                    android:paddingTop="4pt"/>
                 <ImageButton
-                    android:layout_width="200px"
+                    android:layout_width="150px"
                     android:layout_height="wrap_content"
                     android:id="@+id/scanButton"
                     android:src="@drawable/scanbtn"/>
