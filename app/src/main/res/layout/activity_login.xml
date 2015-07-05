@@ -1,11 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-    <ImageButton
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/loginButton"
-        android:src="@drawable/buttonmenu" />
-</LinearLayout>
+        android:id="@+id/layoutHeader"
+        android:orientation="vertical">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:shrinkColumns="1"
+            android:stretchColumns="8,4">
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffffff">
+                <ImageView
+                    android:layout_width="500px"
+                    android:layout_height="200px"
+                    android:id="@+id/imageView_Time"
+                    android:background="@drawable/headerleft" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView_User"
+                    android:background="@drawable/headright" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutHeader"
+        android:gravity="center"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="USERNAME" />
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:ems="10"
+            android:id="@+id/password"
+            android:layout_weight="1"
+            android:text="PASSWORD" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginButton"
+            android:src="@drawable/buttonmenu" />
+    </LinearLayout>
+
+</RelativeLayout>
