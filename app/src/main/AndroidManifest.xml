@@ -9,13 +9,27 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".AddingActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".AddingStep1Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".AddingStep2Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".AddingStep3Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".AddingStep4Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".InformationActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".PendingActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ScanInputActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ScanOutputActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".SignatureActivity" android:screenOrientation="landscape"/>
+
     </application>
 
 </manifest>
