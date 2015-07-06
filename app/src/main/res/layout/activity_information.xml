@@ -92,47 +92,35 @@
         android:id="@+id/image"
         android:layout_below="@id/tracking"
         android:src="@drawable/headright"/>
-    <TableLayout
-        android:layout_below="@id/image"
-        android:layout_width="match_parent"
-        android:layout_height="80px"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:shrinkColumns="1"
-        android:stretchColumns="5,7"
-        android:background="#FFF"
-        android:id="@+id/phonecall">
-        <TableRow
-            android:id="@+id/tableRow_phone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/phone"
-                android:paddingLeft="10pt"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="10pt"
-                android:gravity="center"
-                android:paddingTop="4pt"
-                android:textColor="#000"
-                android:text="0888888888"
-                android:id="@+id/phone" />
-        </TableRow>
-    </TableLayout>
 
     <!-- SLIDE FOR CALL -->
-
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="25pt"
+            android:id="@+id/phoneSlider">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="25pt"
+            android:gravity="center"
+            android:background="#FFF"
+            android:textColor="#000"
+            android:textSize="10pt"
+            android:id="@+id/phone"/>
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="25pt"
+            android:indeterminate="false"
+            android:progressDrawable="@xml/progress_drawable"
+            android:thumb="@drawable/phone"
+            android:id="@+id/slider"/>
+    </RelativeLayout>
 
     <ImageButton
         android:layout_width="fill_parent"
         android:layout_height="200px"
         android:id="@+id/scanButton"
         android:background="#FFF"
-        android:layout_below="@id/phonecall"
+        android:layout_below="@id/phoneSlider"
         android:src="@drawable/scanbtninfo"/>
     <ImageButton
         android:layout_width="fill_parent"
