@@ -72,7 +72,8 @@
                     android:textSize="14pt"
                     android:gravity="center"
                     android:textColor="#FFF"
-                    android:paddingTop="2pt"
+                    android:paddingTop="4pt"
+                    android:paddingRight="20pt"
                     android:text="Pendding"/>
 
             </TableRow>
