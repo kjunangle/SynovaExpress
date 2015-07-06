@@ -67,15 +67,19 @@
                     android:layout_width="800px"
                     android:layout_height="wrap_content"
                     android:id="@+id/pagrname"
-                    android:textSize="15pt"
+                    android:textSize="12pt"
                     android:gravity="center"
                     android:textColor="#FFF"
-                    android:paddingTop="4pt"
+                    android:paddingTop="2pt"
                     android:text="All Tracking"/>
                 <ImageButton
-                    android:layout_width="150px"
-                    android:layout_height="wrap_content"
+                    android:layout_width="140px"
+                    android:layout_height="100px"
                     android:id="@+id/scanButton"
+                    android:layout_marginTop="2pt"
+                    android:layout_marginRight="2pt"
+                    android:paddingTop="1pt"
+
                     android:src="@drawable/scanbtn"/>
             </TableRow>
         </TableLayout>
