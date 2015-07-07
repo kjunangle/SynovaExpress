@@ -68,9 +68,9 @@ public class PhoneActivity extends Activity {
                     if (onCall == true) {
                         //Toast.makeText(MainActivity.this, "restart app after call",Toast.LENGTH_LONG).show();
 
-                        // restart our application
+                        //restart our application
                         //Intent restart = getBaseContext().getPackageManager().
-                        //        getLaunchIntentForPackage(getBaseContext().getPackageName());
+                        //getLaunchIntentForPackage(getBaseContext().getPackageName());
 
                         Intent intent = new Intent(PhoneActivity.this,InformationActivity.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
