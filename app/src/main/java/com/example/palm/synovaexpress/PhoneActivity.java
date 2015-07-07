@@ -7,8 +7,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
-import android.widget.SeekBar;
-import android.widget.TextView;
 import android.widget.Toast;
 
 /**
@@ -50,6 +48,7 @@ public class PhoneActivity extends Activity {
             switch (state) {
                 case TelephonyManager.CALL_STATE_RINGING:
                     // phone ringing...
+                    //if incoming number == 080000 print sophittha (think for try)
                     Toast.makeText(PhoneActivity.this, incomingNumber + " calls you",
                             Toast.LENGTH_LONG).show();
                     break;
