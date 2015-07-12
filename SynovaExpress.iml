@@ -6,6 +6,7 @@
         <option name="BUILD_FOLDER_PATH" value="$MODULE_DIR$/build" />
         <option name="BUILDABLE" value="false" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       </configuration>
     </facet>
     <facet type="android-gradle" name="Android-Gradle">
@@ -16,6 +17,8 @@
     <facet type="android" name="Android">
       <configuration>
         <option name="ALLOW_USER_CONFIGURATION" value="false" />
+=======
+>>>>>>> parent of de25d52... edit tap slide at any where but not for click 100
 =======
 >>>>>>> parent of de25d52... edit tap slide at any where but not for click 100
       </configuration>

@@ -15,8 +15,6 @@ public class InformationActivity extends Activity implements SeekBar.OnSeekBarCh
 
     ImageButton scan_btn,pending_btn;
     TextView textView;
-    SeekBar seekBar;
-    String number = "0831039888";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +22,9 @@ public class InformationActivity extends Activity implements SeekBar.OnSeekBarCh
         setContentView(R.layout.activity_information);
 
         textView = (TextView)findViewById(R.id.phone);
-        textView.setText("slide for call");
+        textView.setText("0831039888");
 
-        seekBar = (SeekBar)findViewById(R.id.slider);
+        SeekBar seekBar = (SeekBar)findViewById(R.id.slider);
         seekBar.setMax(100);
         seekBar.setProgress(0);
         seekBar.setOnSeekBarChangeListener(this);
@@ -54,22 +52,20 @@ public class InformationActivity extends Activity implements SeekBar.OnSeekBarCh
 
     @Override
     public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-
-        if(i == 100){
+        if(i >= 90){
             Intent intent = new Intent(InformationActivity.this,PhoneActivity.class);
-            //intent.putExtra("phoneNumber",textView.getText().toString());
-            intent.putExtra("phoneNumber",number);
+            intent.putExtra("phoneNumber",textView.getText().toString());
             startActivity(intent);
         }
     }
 
     @Override
     public void onStartTrackingTouch(SeekBar seekBar) {
+
     }
 
     @Override
     public void onStopTrackingTouch(SeekBar seekBar) {
-        seekBar.setProgress(0);
-        //fix seek bar can click 100 for call
+
     }
 }
